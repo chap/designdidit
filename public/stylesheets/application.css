@@ -1,6 +1,6 @@
 body {
 	-webkit-text-size-adjust: none;
-	width: 500px;
+	width: 430px;
 	margin: 0 auto;
 	background: #000;
 	color: #999;
@@ -77,5 +77,5 @@ label {
 
 #bd {
 	padding-top: 1em;
-	padding-bottom: 4em;
+	padding-bottom: 2em;
 }
