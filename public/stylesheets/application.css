@@ -7,7 +7,7 @@ body {
 }
 
 a {
-	color: #66ccff;
+	color: #999;
 }
 
 a:hover {
@@ -43,6 +43,10 @@ textarea {
 
 #ft {
 	border-top: 1px solid #999;
+}
+
+#ft a {
+		color: #66ccff;
 }
 
 .microcopy {
