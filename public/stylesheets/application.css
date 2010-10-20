@@ -1,0 +1,77 @@
+body {
+	-webkit-text-size-adjust: none;
+	width: 500px;
+	margin: 0 auto;
+	background: #000;
+	color: #999;
+}
+
+a {
+	color: #66ccff;
+}
+
+a:hover {
+	color: #fff;
+}
+
+h1#description {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-weight: normal;
+	color: #66ccff;
+}
+
+h1#description .highlight {
+	color: #fff;
+	background: none;
+}
+
+#error_explanation, #error_explanation h2 {
+	color: #f26ab9;
+}
+
+textarea {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 31px;
+}
+
+#hd {
+	border-bottom: 1px solid #999;
+}
+
+#ft {
+	border-top: 1px solid #999;
+}
+
+.microcopy {
+	font-size: 13px;
+}
+
+#hd, #ft {
+	font-size: 13px;
+	text-align:center;
+	padding: 1em;
+}
+
+#hd a{
+	text-decoration: none;
+	color: #999;
+}
+
+.field {
+	margin-bottom: 2em;
+}
+
+input[type=text], textarea {padding: 1em;}
+
+label {
+	color: #fff;
+	font-size: 21px;
+}
+
+#bd {
+	padding-top: 1em;
+	padding-bottom: 4em;
+}

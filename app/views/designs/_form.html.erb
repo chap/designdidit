@@ -1,0 +1,39 @@
+<%= form_for(@design) do |f| %>
+  <% if @design.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@design.errors.count, "error") %> prohibited this design from being saved:</h2>
+
+      <ul>
+      <% @design.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description, raw("What's the <strong>impact</strong> of the design?") %>
+    <div class="microcopy">
+      We need a number here. Think outcomes. What were you measuring? (Design sold 14 million iPhones.)
+    </div>
+    <%= f.text_area :description, :style => 'width:80%;height:3em' %>
+  </div>
+  <div class="field">
+    <%= f.label :source_url, "Cite your source." %>
+    <div class="microcopy">
+      Link to where we can learn more or view the design. (http://yomomma...)
+    </div>
+    <%= f.text_field :source_url, :style => 'width:90%' %>
+  </div>
+  <div class="field">
+    <%= f.label :tag_list, "Tag it up." %>
+    <div class="microcopy">
+      Add keywords so we can hook you up with designs you might know. (logo, website, book)
+    </div>
+    <%= f.text_field :tag_list, :style => 'width:90%' %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit :class => 'button' %>
+  </div>
+<% end %>

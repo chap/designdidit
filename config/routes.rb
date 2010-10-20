@@ -1,4 +1,14 @@
 Designdidit::Application.routes.draw do
+  root :to => "designs#index"
+  match 'designs/tag/:id' => 'designs#tag', :as => :designs_by_tag
+
+  resources :designs do
+    collection do
+      get 'what'
+    end
+  end
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

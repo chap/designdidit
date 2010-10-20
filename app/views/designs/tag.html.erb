@@ -1,0 +1,6 @@
+<% if @designs.any? %>
+  <% @design = @designs.choice %>
+  <%= render @design %>
+<% else %>
+  No designs found with the tag "<%= params[:id] %>"
+<% end %>

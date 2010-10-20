@@ -1,0 +1,10 @@
+<h1 id="description">
+  <%=raw highlight_description(@design.description) %>
+</h1>
+see it at <%= link_to truncate(@design.source_url), @design.source_url %><br />
+<% if @design.tag_list.any? %>
+  more on 
+  <% @design.tag_list.each do |tag|%>
+    <%= link_to tag, designs_by_tag_path(tag) %>
+  <% end %>
+<% end %>
