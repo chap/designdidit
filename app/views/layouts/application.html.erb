@@ -12,13 +12,11 @@
 <body>
   <div id="container">
     <div id="hd">
-      <%= link_to 'designdidit.com', root_path %>
+      <%= link_to 'add a design', new_design_path %>
+      <%= link_to image_tag('ff.png'), root_path, :style => 'float:right' %>
     </div>
     <div id="bd">
       <%= yield %>
-    </div>
-    <div id="ft">
-      <%= link_to 'add a design', new_design_path %>
     </div>
   </div>
 </body>

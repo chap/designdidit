@@ -1,8 +1,6 @@
 body {
 	-webkit-text-size-adjust: none;
-	width: 350px;
-	margin: 0 auto;
-	background: #000;
+	background: #fff;
 	color: #999;
 }
 
@@ -11,18 +9,20 @@ a {
 }
 
 a:hover {
-	color: #fff;
+	color: #666;
 }
 
 h1#description {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 	font-weight: normal;
-	color: #66ccff;
+	line-height: 1.2em;
+	margin-bottom: 3em;
+	color: #333;
 }
 
 h1#description .highlight {
-	color: #fff;
+	color: red;
 	background: none;
 }
 
@@ -38,7 +38,7 @@ textarea {
 }
 
 #hd {
-	border-bottom: 1px solid #999;
+	background: #333;
 }
 
 #ft {
@@ -55,7 +55,6 @@ textarea {
 
 #hd, #ft {
 	font-size: 13px;
-	text-align:center;
 	padding: 1em;
 }
 
@@ -76,6 +75,8 @@ label {
 }
 
 #bd {
-	padding-top: 1em;
+	width: 350px;
+	margin: 0 auto;
+	padding-top: 5em;
 	padding-bottom: 2em;
 }
