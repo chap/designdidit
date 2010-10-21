@@ -10,14 +10,16 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <div id="hd">
-    <%= link_to 'designdidit.com', root_path %>
-  </div>
-  <div id="bd">
-    <%= yield %>
-  </div>
-  <div id="ft">
-    <%= link_to 'add a design', new_design_path %>
+  <div id="container">
+    <div id="hd">
+      <%= link_to 'designdidit.com', root_path %>
+    </div>
+    <div id="bd">
+      <%= yield %>
+    </div>
+    <div id="ft">
+      <%= link_to 'add a design', new_design_path %>
+    </div>
   </div>
 </body>
 </html>
